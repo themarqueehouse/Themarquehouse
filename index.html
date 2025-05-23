@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,52 +7,31 @@
   <title>The Marquee House</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Georgia', serif;
       background-color: #0d0d0d;
       color: white;
-      scroll-behavior: smooth;
-    }
-    nav {
-      background-color: #000;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      display: flex;
-      justify-content: center;
-    }
-    nav a {
-      color: #ffd700;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-size: 1.1em;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    header {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      padding: 40px 20px;
     }
     img.logo {
       max-width: 250px;
       width: 100%;
       height: auto;
+      margin-top: 40px;
     }
     section {
       padding: 60px 20px;
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
     }
     h2 {
       font-size: 2em;
-      margin-bottom: 20px;
+      color: #fff;
     }
     p {
       font-size: 1.2em;
       color: #ccc;
+      max-width: 600px;
+      margin: 20px auto;
     }
     input, button {
       font-size: 1em;
@@ -74,7 +54,7 @@
       color: #fff;
     }
     .social-links {
-      margin-top: 40px;
+      margin: 40px 0;
     }
     .social-links a {
       margin: 0 10px;
@@ -82,53 +62,35 @@
       color: #ffd700;
       font-size: 1.2em;
     }
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #aaa;
-      font-size: 0.9em;
-    }
   </style>
 </head>
 <body>
-
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#calculator">Calculator</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <header id="home">
+  <div>
     <img src="logo.png" alt="The Marquee House Logo" class="logo">
-  </header>
+  </div>
 
   <section id="pricing">
     <h2>Pricing</h2>
-    <p>Each of our elegant marquee letters is available to rent for <strong>$30 per letter</strong>. Perfect for weddings, birthdays, baby showers, and corporate events.</p>
+    <p>
+      Our marquee letters are available for <strong>$30 per letter</strong>.
+      Each letter stands out with warm white bulbs, perfect for birthdays, weddings, corporate events, and more.
+    </p>
   </section>
 
   <section id="calculator">
     <h2>Price Calculator</h2>
-    <p>Enter the number of letters you'd like to rent:</p>
-    <input type="number" id="letterCount" min="1" placeholder="Number of letters" />
+    <p>Enter how many letters you'd like to rent:</p>
+    <input type="number" id="letterCount" min="1" placeholder="Number of letters"/>
     <button onclick="calculatePrice()">Calculate</button>
     <div id="priceResult"></div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Have questions or want to customize your rental? Reach out to us below.</p>
-    <div class="social-links">
-      <a href="https://facebook.com" target="_blank">Facebook</a>
-      <a href="https://instagram.com" target="_blank">Instagram</a>
-      <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
-    </div>
+  <section class="social-links">
+    <h2>Connect With Us</h2>
+    <a href="https://facebook.com" target="_blank">Facebook</a>
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+    <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
   </section>
-
-  <footer>
-    © 2025 The Marquee House. All rights reserved.
-  </footer>
 
   <script>
     function calculatePrice() {
@@ -142,6 +104,5 @@
       }
     }
   </script>
-
 </body>
 </html>
