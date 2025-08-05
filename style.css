@@ -1,0 +1,109 @@
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #333333;
+  color: #F5F0E6;
+}
+
+header.hero {
+  text-align: center;
+  padding: 2em;
+  background-color: #1F1F1F;
+}
+
+.logo {
+  max-width: 200px;
+  margin-bottom: 1em;
+}
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  color: #FFFFFF;
+}
+
+.slider {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.main-content {
+  padding: 2em;
+}
+
+.about h2, .contact h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.about p, .about ul {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.about ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about ul li::before {
+  content: "• ";
+  color: #E7DCCB;
+}
+
+.cta {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.book-now {
+  background-color: #E7DCCB;
+  color: #333333;
+  padding: 1em 2em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.book-now:hover {
+  background-color: #d0c3ae;
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-links li {
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5em;
+}
+
+.footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #1F1F1F;
+  color: #aaaaaa;
+  font-size: 0.9em;
+}
