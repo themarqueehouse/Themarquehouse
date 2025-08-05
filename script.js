@@ -3,9 +3,9 @@ window.addEventListener("load", function () {
   const loader = document.getElementById("loading-screen");
   setTimeout(function () {
     loader.style.opacity = "0";
-    loader.style.transition = "opacity 1s ease";
+    loader.style.transition = "opacity 2s ease";
     setTimeout(() => {
       loader.style.display = "none";
-    }, 1000); // Wait for the fade to complete
-  }, 8000); // Force 8 seconds regardless of load speed
+    }, 2000); // Wait for the fade to complete
+  }, 15000); // Force 15 seconds regardless of load speed
 });
