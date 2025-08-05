@@ -1,7 +1,7 @@
-// Show loading screen immediately (keep it visible for 15 seconds)
+// This runs as soon as the DOM is ready
 document.addEventListener("DOMContentLoaded", function () {
-  // Start the timer right away
   setTimeout(function () {
-    document.getElementById("loading-screen").style.display = "none";
-  }, 15000); // 15 seconds
+    const loader = document.getElementById("loading-screen");
+    if (loader) loader.style.display = "none";
+  }, 8000); // Force 8 seconds no matter how fast page loads
 });
