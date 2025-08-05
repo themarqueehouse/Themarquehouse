@@ -3,6 +3,8 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #fdfdfc;
     color: #333;
+    .large-text {
+  font-size: 50px;
 }
 
 #loading-screen {
