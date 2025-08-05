@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
   setTimeout(function () {
     document.getElementById("loader").style.display = "none";
-  }, 4000); // 4000 milliseconds = 4.0 seconds
+  }, 8000); // 8000 milliseconds = 8.0 seconds
 });
