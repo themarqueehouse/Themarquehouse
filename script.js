@@ -1,7 +1,11 @@
-// This runs as soon as the DOM is ready
-document.addEventListener("DOMContentLoaded", function () {
+// Force the loading screen to stay for a minimum time
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loading-screen");
   setTimeout(function () {
-    const loader = document.getElementById("loading-screen");
-    if (loader) loader.style.display = "none";
-  }, 8000); // Force 8 seconds no matter how fast page loads
+    loader.style.opacity = "0";
+    loader.style.transition = "opacity 2s ease";
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 2000); // Wait for the fade to complete
+  }, 15000); // Force 15 seconds regardless of load speed
 });
